@@ -12,6 +12,48 @@
 <div class="navbar">
 
 </div>
+<div class="container list">
+    <span id="index"></span>
+    Question: <h4 class="question"></h4>
+
+    Answers:
+    <ul class="list-group">
+        <li class="list-group-item"></li>
+        <li class="list-group-item"></li>
+        <li class="list-group-item"></li>
+        <li class="list-group-item"></li>
+    </ul>
+
+    <div class="buttons">
+        <button class="btn btn-danger previous">Previous</button>
+        <button class="btn btn-success next">Next</button>
+    </div>
+
+    <h4>Your score: <span class="score">0</span>/20 points.</h4>
+</div>
+<div class="container results" style="display: none">
+    <div class="btn-group-custom">
+        <button class="btn btn-success btn-custom restart">Retake quiz</button>
+    </div>
+    <div class="score">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>Point/20</th>
+                <th>Average</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">Your score</th>
+                <td class="userScorePoint"></td>
+                <td class="average"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
 <div>
     <footer class="center">
         Copyrights &copy; Rafał Rzeszutek | 2020
@@ -22,6 +64,7 @@
         <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>Do góry
     </button>
 </div>
+<script src="js/script.js"></script>
 <script src="js/scroll.js"></script>
 <script src="js/navbar.js"></script>
 </body>
